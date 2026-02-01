@@ -31,11 +31,12 @@ Before running the application, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-3. **Set up Environment Variables:**
-   Create a `.env` file in the root directory.
+3. **Set up Secrets:**
+   Create a folder named `.streamlit` in the root directory.
+   Inside it, create a file named `secrets.toml`.
    Add your Google Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_actual_api_key_here
+   ```toml
+   GEMINI_API_KEY = "your_actual_api_key_here"
    ```
 
 ## Usage
@@ -63,4 +64,4 @@ Before running the application, ensure you have the following installed:
 - **Streamlit**: Web framework.
 - **Google GenAI SDK**: For accessing the Gemini model.
 - **DDGS (DuckDuckGo Search)**: For retrieving real-time information from the web.
-- **Python Dotenv**: For managing environment variables.
+- **Streamlit Secrets**: For managing sensitive configuration.
